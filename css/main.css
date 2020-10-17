@@ -1,0 +1,174 @@
+/* VARIAVEIS GLOBAIS */
+:root {
+    --preto-default: #141414;
+    --preto-secundario: #333333;
+    --preto-footer: #757575;
+    --vermelho-default: #E50914; 
+    --branco-default: #ffffff;
+
+    --fonte-default: 'Arial', Times, serif;
+    --fonte-logo: 'Arial Black', Times;
+}
+
+/* ZERANDO MARGENS */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* ESTILOS PADRAO */
+body {
+    background-color: var(--preto-default);
+    font-family: var(--fonte-default);
+    color: var(--branco-default);
+    direction: ltr;
+    width: 100%;
+    height: 100%;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 90px;
+}
+
+header .logo{
+    background-image: url(../img/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 165px;
+    height: 50px;
+    margin-left: 40px;
+    margin-top: 10px;
+}
+
+header nav {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 50px;
+}
+
+header nav a {
+    text-decoration:none;
+    text-align: center;
+    color: var(--branco-default);
+    width: 130px;
+    padding: 5px 0;
+}
+
+header nav a:hover {
+    background-color: var(--preto-secundario);
+    transition: .3s ease all;
+}
+
+/* ESTILOS LOGIN */
+
+body.login {
+    background-repeat: no-repeat;
+    background-size: inherit;
+    background: linear-gradient(rgba(0,0,0,.60),rgba(0,0,0,.60)100%),  url('../img/bg-login.jpg');
+}
+
+main.login {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+main.login .container {
+    background-color: rgba(0,0,0,.70);
+    width: 450px;
+    padding: 60px;
+}
+
+main.login .container h2 { 
+    font-size: 33px;
+}
+
+main.login .container-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 25px;
+}
+
+main.login .container-form input[type=text], main.login .container-form input[type=password] {
+    width: 100%;
+    background-color: var(--preto-secundario);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    height: 50px;
+    margin: 8px 0;
+    color: var(--branco-default);
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+main.login .container-form .links input[type=checkbox] {
+    background-color: var(--preto-secundario);
+    width: 20px;
+}
+
+main.login .container-form a.btn-login {
+    width: 100%;
+    background-color: var(--vermelho-default);
+    border: 1px solid transparent;
+    border-radius: 4px;
+    height: 50px;
+    margin-top: 30px;
+    color: var(--branco-default);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 17px;
+    text-align: center;
+    padding-top: 15px;
+}
+
+main.login .container-form div.links {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #b3b3b3;
+    margin-top: 15px;
+}
+
+/* FOOTER */
+footer.login {
+    background-color: rgba(0,0,0,.70);
+    width: 100%;
+    margin: 80px 0 0 0;
+    color: var(--preto-footer);
+    padding: 0 0 130px 0;
+}
+
+footer.login .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding-top: 20px;
+}
+
+footer.login header {
+    padding: 20px 0;
+}
+
+footer.login main ul {
+    font-size: 13px;
+}
+
+footer.login main ul li {
+    list-style: none;
+    float: left;
+    padding: 5px 0;
+}
+
+footer.login main ul li a {
+    width: 240px;
+    display: block;
+}
